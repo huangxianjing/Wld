@@ -111,3 +111,4 @@ git 在pull或者合并分支的时候有时会遇到这个界面。可以不管
 考虑到版本还会更新，而master是主分支，可以在其下新建一个develop分支，最后开发完毕后合并到master中(还不是很懂下次碰到问题在解决)
 
 原地址：http://www.jianshu.com/p/01975e421ddb
+上传下载项目：http://blog.csdn.net/lsyz0021/article/details/51292311
