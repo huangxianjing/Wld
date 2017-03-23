@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">小蜜</string>
+    <!-- Volley请求返回 -->
+    <string name="generic_server_down">服务器暂时无法访问,请稍后再试.</string>
+    <string name="no_internet">目前无网络连接,请连接后再试.</string>
+    <string name="generic_error">网络异常</string>
+    <string name="de_dialog_item_message_delete">删除消息</string>
+    <string name="str_url_sign_key">WEIYUQWERAS</string>
+    <string name="title_activity_homescreen">HomescreenActivity</string>
+    <string name="title_activity_menu_buttom_bar">MenuButtomBarActivity</string>
+    <string name="title_activity_information_web">InformationWebActivity</string>
+    <string name="title_activity_wei_jiang_tang">WeiJiangTangActivity</string>
+    <string name="title_activity_wei_jiang_tang_detais">WeiJiangTangDetaisActivity</string>
+    <string name="header_hint_refresh_normal">下拉刷新</string>
+    <string name="header_hint_refresh_ready">松开刷新数据</string>
+    <string name="header_hint_refresh_loading">正在加载...</string>
+    <string name="header_hint_refresh_time">上次更新时间：</string>
+    <string name="footer_hint_load_normal">查看更多</string>
+    <string name="footer_hint_load_ready">松开载入更多</string>
+
+    <string name="title_activity_wei_jiang_tang_list">WeiJiangTangListActivity</string>
+    <string name="register_read_agreement">我已阅读并同意《微领地服务协议》</string>
+    <string name="red_packet_rule">1、活动对象：所有小蜜注册用户;\n2、参与方式：小蜜Android或IOS客户端点击发现就有机会获得红包; \n3、参与次数：活动期间不限次数参与; \n4、活动时间：详情请见官网公告; \n5、如有疑问请致电客服热线：4009603400; \n6、活动最终解释权归长沙微领地网络科技有限公司所有。</string>
+
+</resources>
