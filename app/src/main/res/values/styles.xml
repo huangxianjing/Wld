@@ -8,4 +8,12 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="Theme.Present" parent="@android:style/Theme.Translucent.NoTitleBar">
+        <item name="android:windowAnimationStyle">@style/PresentAnimation</item>
+    </style>
+
+    <style name="PresentAnimation">
+        <item name="android:windowEnterAnimation">@anim/activity_top_in</item>
+        <item name="android:windowExitAnimation">@anim/activity_bottom_out</item>
+    </style>
 </resources>

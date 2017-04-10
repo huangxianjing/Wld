@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/mainTopColor" />
+
+        <com.wld.net.view.RotateLayout
+            android:id="@+id/second_rotate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="80dp" />
+
+        <com.wld.net.view.MainHeadView
+            android:id="@+id/main_head_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/discover_icon_scan"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/discover_icon_scan" />
+
+        <ImageView
+            android:id="@+id/discover_icon_mess"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/discover_icon_mess" />
+
+        <ImageView
+            android:id="@+id/discover_icon_task"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="right"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="52dp"
+            android:background="@drawable/discover_icon_task" />
+
+        <ImageView
+            android:id="@+id/discover_assistant"
+            android:layout_width="56dp"
+            android:layout_height="78dp"
+            android:layout_gravity="right|bottom"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/discover_assistant" />
+
+        <ImageView
+            android:id="@+id/discover_assistant_pop_bg"
+            android:layout_width="181dp"
+            android:layout_height="79dp"
+            android:layout_gravity="right|bottom"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/discover_assistant_pop_bg"
+            android:visibility="gone" />
+    </FrameLayout>
+</LinearLayout>

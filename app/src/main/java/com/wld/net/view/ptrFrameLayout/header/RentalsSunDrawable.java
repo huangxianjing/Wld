@@ -32,14 +32,14 @@ public class RentalsSunDrawable extends Drawable implements Animatable {
     private static final float TOWN_FINAL_SCALE = 1.30f;
 
     private static final float SUN_FINAL_SCALE = 0.75f;
-    private static final float SUN_INITIAL_ROTATE_GROWTH = 1.2f;
-    private static final float SUN_FINAL_ROTATE_GROWTH = 1.5f;
+    private static final float SUN_INITIAL_ROTATE_GROWTH = 1.2f;//
+    private static final float SUN_FINAL_ROTATE_GROWTH = 1.5f;//
 
     private static final Interpolator LINEAR_INTERPOLATOR = new LinearInterpolator();
 
-    private View mParent;
-    private Matrix mMatrix;
-    private Animation mAnimation;
+    private View mParent;//下拉刷新父视图
+    private Matrix mMatrix;//
+    private Animation mAnimation;//动画
 
     private int mTop;
     private int mScreenWidth;
@@ -56,7 +56,7 @@ public class RentalsSunDrawable extends Drawable implements Animatable {
     private int mSunSize = 100;
     private float mSunLeftOffset;
     private float mSunTopOffset;
-
+/***/
     private float mPercent = 0.0f;
     private float mRotate = 0.0f;
 
@@ -158,8 +158,8 @@ public class RentalsSunDrawable extends Drawable implements Animatable {
                 - mSkyHeight * (skyScale - 1.0f) / 2 // Offset sky scaling, lower than 0, will go greater when goes down
                 + mSkyMoveOffset * dragPercent; // Give it a little move top -> bottom  // will go greater when goes down
 
-        matrix.postScale(skyScale, skyScale);
-        matrix.postTranslate(offsetX, offsetY);
+        matrix.postScale(skyScale, skyScale);//执行缩放
+        matrix.postTranslate(offsetX, offsetY);//
         canvas.drawBitmap(mSky, matrix, null);
     }
 
@@ -220,7 +220,7 @@ public class RentalsSunDrawable extends Drawable implements Animatable {
                 + (mTotalDragDistance / 2) * (1.0f - dragPercent); // Move the sun up
 
         float scalePercentDelta = dragPercent - SCALE_START_PERCENT;
-        if (scalePercentDelta > 0) {
+        if (scalePercentDelta > 0) {//需要放大
             float scalePercent = scalePercentDelta / (1.0f - SCALE_START_PERCENT);
             float sunScale = 1.0f - (1.0f - SUN_FINAL_SCALE) * scalePercent;
             sunRotateGrowth += (SUN_FINAL_ROTATE_GROWTH - SUN_INITIAL_ROTATE_GROWTH) * scalePercent;
@@ -230,7 +230,7 @@ public class RentalsSunDrawable extends Drawable implements Animatable {
 
             offsetX += sunRadius;
             offsetY = offsetY * (2.0f - sunScale) + sunRadius * sunScale;
-        } else {
+        } else {//不需要放大时只改变位置
             matrix.postTranslate(offsetX, offsetY);
 
             offsetX += sunRadius;

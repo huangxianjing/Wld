@@ -1,5 +1,6 @@
 package com.wld.net;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -54,7 +55,13 @@ public class MainActivity extends AppCompatActivity {
                 mText.setText("测试完啦");
             }
         });
-
+        mText.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
 
